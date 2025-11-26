@@ -28,14 +28,6 @@ spec:
       main:
         enabled: false
 
-    persistence:
-      library:
-        enabled: true
-        type: persistentVolumeClaim
-        existingClaim: immich-library-pvc
-        accessMode: ReadWriteMany
-        size: "1Ti"
-
     postgresql:
       enabled: true
     
@@ -45,3 +37,10 @@ spec:
     immich:
       machine_learning:
         enabled: false
+      persistence:
+        library:
+          enabled: true
+          type: persistentVolumeClaim
+          existingClaim: immich-library-pvc
+          accessMode: ReadWriteMany
+          size: "1Ti"
