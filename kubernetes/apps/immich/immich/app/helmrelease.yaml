@@ -28,9 +28,6 @@ spec:
       main:
         enabled: false
 
-    postgresql:
-      enabled: true
-    
     redis:
       enabled: true
 
