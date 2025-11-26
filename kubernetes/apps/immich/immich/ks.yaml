@@ -5,7 +5,8 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: cluster-apps-envoy-gateway
+    - name: envoy-gateway
+      namespace: network
   path: ./kubernetes/apps/immich/immich/app
   prune: true
   sourceRef:
