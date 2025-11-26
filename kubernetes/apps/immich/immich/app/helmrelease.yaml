@@ -28,9 +28,6 @@ spec:
       main:
         enabled: false
 
-    redis:
-      enabled: true
-
     immich:
       machine_learning:
         enabled: false
